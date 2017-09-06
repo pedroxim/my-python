@@ -3,11 +3,15 @@ pipeline {
     label "docker"
   }
   stages {
-      stage('Build docker-compose'){
+      stage('Build container'){
         steps {
           sh "docker-compose build"
-          sh "docker-compose up -d"
           }
+      stage('Run container'){
+        steps {
+          sh "docker-compose up -d"
+        }
+      }
     }
   }
 }
