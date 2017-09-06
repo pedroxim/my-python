@@ -9,5 +9,5 @@ WORKDIR /app
 
 EXPOSE 5000
 
-##Run hello.py
+##Run APP
 CMD ["/bin/sh", "-c", "FLASK_APP=/app/hello.py flask run --host=0.0.0.0"]
