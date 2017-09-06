@@ -9,6 +9,6 @@ services:
     ports:
       - "5000"
     external_links:
-      - mycompose_db_1
-      - mycompose_elasticsearch_1
-      - mycompose_redis_1
+      - db
+      - elasticsearch
+      - redis
