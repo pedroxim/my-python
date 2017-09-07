@@ -3,7 +3,6 @@ FROM python:latest
 ##Install Flask, create app folder and copy hello.py
 RUN pip install Flask
 RUN mkdir /app
-COPY app/hello.py /app/hello.py
 
 WORKDIR /app
 
